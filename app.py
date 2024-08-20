@@ -39,10 +39,7 @@ def get_contextual_recommendations(movie_title, context, movies_df):
             'id': row['id'],
             'original_language': row['original_language'],
             'original_title': row['original_title'],
-            'overview': row['overview'],
-            'popularity': row['popularity'],
-            'release_date': row['release_date'],
-            'revenue': row['revenue'],
+
             'runtime': row['runtime'],
             'status': row['status'],
             'tagline': row['tagline'],
@@ -71,12 +68,4 @@ def recommend():
         'location': 'New York, USA'  # Hardcoded location, can be dynamic based on IP
     }
 
-    recommended_movies = get_contextual_recommendations(movie_title, context, movies_df)
 
-    if len(recommended_movies) == 0:
-        return render_template('result.html', movie=movie_title, context=context, error='No recommendations found.')
-    else:
-        return render_template('result.html', movie=movie_title, context=context, recommendations=recommended_movies)
-
-if __name__ == '__main__':
-    app.run(debug=True)
