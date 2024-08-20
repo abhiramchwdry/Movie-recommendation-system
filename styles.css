@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('/static/images/movies.png.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #83e0f7;
+}
+
+header {
+    background-color: rgba(44, 62, 80, 0.8);
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header img.logo {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    height: 80px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #aae021;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    color: #3498db;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 80px auto 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #0c151e;
+}
+
+.main-content h2 {
+    margin-top: 0;
+}
+
+.main-content form {
+    margin: 20px 0;
+}
+
+.main-content input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #828485;
+    font-size: 1em;
+}
+
+.main-content input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.main-content input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #ecf0f1;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: #2c3e50;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* New styles for the results page */
+.results-container {
+    max-width: 900px;
+    margin: 80px auto 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #0c151e;
+}
+
+.results-container h2 {
+    margin-top: 0;
+}
+
+.table-container {
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+td {
+    background-color: rgba(52, 152, 219, 0.2);
+    color: #2c3e50;
+}
